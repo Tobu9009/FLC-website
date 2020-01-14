@@ -13,7 +13,8 @@ Colors Used:
 #F2DBD0
 #DEB48A
 #F2E7D0
-[color palette](FLC-website/images/flcWebsiteColorPalette.png)
+
+![color palette](FLC-website/images/flcWebsiteColorPalette.png)
 
 Complete links. Ensure that there are no dead links. 
 
