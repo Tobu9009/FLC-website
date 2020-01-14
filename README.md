@@ -1,6 +1,7 @@
 Roadmap
-Base project: The website. Should be finished in a month. Consider modularity for upcoming events. Every change should be made in a pull request and reviewed by at least of 2 of us before a push. Every image should be included in the images folder.    
-###To-do
+Base project: The website. No deadline, but work whenever you have time. Consider modularity for upcoming events. Every change should be made in a pull request and reviewed by at least of 2 of us before a push. Every image should be included in the images folder.    
+
+To-do: 
 * Implement Nav Bar
 * Bodies
 * Footer
