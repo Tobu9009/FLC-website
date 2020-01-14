@@ -9,7 +9,7 @@ The color of the website will probably follow a beige color as well as white.
 Colors Used: 
 
 #991732             
-#DB6B5A            
+#DB6B5A
 #F2DBD0
 #DEB48A
 #F2E7D0
