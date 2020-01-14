@@ -33,6 +33,6 @@ Colors Used:
 
 * Add Mobile Specifications
 
-* Add any extra features (i.e. donations, tithes, videos, search function lmdao??) 
+* Add any extra features (i.e. donations, tithes, videos, search function lmfao??) 
 
 
