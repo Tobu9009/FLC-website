@@ -14,7 +14,7 @@ Colors Used:
 #DEB48A
 #F2E7D0
 
-![color palette](FLC-website/images/flcWebsiteColorPalette.png)
+![color palette](https://github.com/Tobu9009/FLC-website/blob/master/images/flcWebsiteColorPalette.png)
 
 Complete links. Ensure that there are no dead links. 
 
