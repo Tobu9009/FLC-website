@@ -7,11 +7,13 @@ The logo will be the original Father's Love Church logo. Have it appear on every
 Set color/themes
 The color of the website will probably follow a beige color as well as white.
 Colors Used: 
+
 #991732
 #DB6B5A
 #F2DBD0
 #DEB48A
 #F2E7D0
+[color palette](FLC-website/images/flcWebsiteColorPalette.png)
 
 Complete links. Ensure that there are no dead links. 
 
