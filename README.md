@@ -8,7 +8,7 @@ Set color/themes
 The color of the website will probably follow a beige color as well as white.
 Colors Used: 
 
-#991732             
+#991732         
 #DB6B5A
 #F2DBD0
 #DEB48A
