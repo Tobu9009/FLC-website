@@ -56,11 +56,11 @@ html, body{
 	margin:0;
 	padding: 2% 4%;
 	width: 92%;
-	height: 100px;
+	height: 150px;
 }
 
 .nav-container a img{
-    width:340px;
+    width:300px;
 }
 
 .nav-container .nav-bar {
@@ -83,39 +83,31 @@ html, body{
 	margin: 0;
 	font-size: 18px;
     font-weight: bold;
+    color: white;
 }
 
 
+/*********************************************************/
+/*********************************************************/
+/*Landing*/
+/*********************************************************/
+/*********************************************************/
 
 
+/*ON GOD text*/
+.landing-container h1{
+	font-size: 80px;
+	color: white;
+	text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Campfire Worship picture*/
+.landing-container .background-image img{
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
 
 
 /*********************************************************/
@@ -125,21 +117,10 @@ html, body{
 /*********************************************************/
 
 .body-container{
-	width:80%;
+	width:60%;
 	height:500px;
-	margin: 0% 10%;
+	margin: 0% 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
