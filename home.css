@@ -12,44 +12,30 @@ html, body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*********************************************************/
 /*********************************************************/
-/*header
+/*Landing*/
 /*********************************************************/
 /*********************************************************/
 
 
+/*ON GOD text*/
+.landing-container h1{
+	font-size: 80px;
+	color: white;
+	text-align: center;
+}
+
+/*Campfire Worship picture*/
+.landing-container .background-image img{
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+
+
+/*NAV BAR*/
 .nav-container {
 	display: block;
 	position:relative;
@@ -86,28 +72,6 @@ html, body{
     color: white;
 }
 
-
-/*********************************************************/
-/*********************************************************/
-/*Landing*/
-/*********************************************************/
-/*********************************************************/
-
-
-/*ON GOD text*/
-.landing-container h1{
-	font-size: 80px;
-	color: white;
-	text-align: center;
-}
-
-/*Campfire Worship picture*/
-.landing-container .background-image img{
-	position: absolute;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-}
 
 
 /*********************************************************/
