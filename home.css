@@ -30,7 +30,6 @@ html, body{
 .landing-container .background-image img{
 	position: absolute;
 	z-index: -1;
-	height: 100%;
 	width: 100%;
 }
 
@@ -86,6 +85,14 @@ html, body{
 	margin: 0% 20%;
 }
 
+/*services*/
+.body-container .story-container .top-container h1{
+	color: white;
+}
+
+.body-container .story-container .top-container p{
+	color: white;
+}
 
 
 
