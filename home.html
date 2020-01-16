@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link type="text/css" rel="stylesheet" href="home.css"/>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,81 +13,79 @@
 </script>
 </head>
 <body>
-    <!-- *********************           Landing container       ***********************--> 
-    <div class="landing-container">
-        <div class= "background-image">
-            <img src="images/retreatCampfireWorship.jpg"/>
-        </div>
-        <div class="nav-container">
-            <a href="home.html"><img src="images/flc-logo-text.png"/></a>
-            <div class="nav-bar">
-                <div class="nav-contents">
-                    <a href="home.html">HOME</a>
-                    <a href=".html">ABOUT US</a>
-                    <a href=".html">NEWS</a>
-                    <a href=".html">CONTACT</a>
-                </div>
-            </div>
-        </div>
-        <div class="banner">
-            <h1>On God.</h1>
-        </div>
-    </div>
     <!-- ********************           Body             **********************-->
     <div class= "body-container">
-        <div class="story-container">
-            <img src=""/>
-            <div class="top-container">
-                <h1>Our Story</h1>
-                <p>Lorem Ipsum</p>
+        <!-- *********************           Landing container       ***********************--> 
+        <div class="landing-container">
+            <div class="nav-container">
+                <a href="home.html"><img src="images/flc-logo-text.png"/></a>
+                <div class="nav-bar">
+                    <div class="nav-contents">
+                        <a href="home.html">HOME</a>
+                        <a href="#story">ABOUT US</a>
+                        <a href="#video">NEWS</a>
+                        <a href="#footer">CONTACT</a>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p>Lorem Ipsum</p>
+            <div class="banner">
+                On God.
             </div>
         </div>
 
+        <div class="contents">
+            <!-- *********************           Story container       ***********************--> 
+            <div class="story-container" id="story">                    <!--subject to change-->
+            <img src="images/assets/story-bg.png"/>
+                <div class="top-container">
+                    <h1>Our Story</h1>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="bottom">
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
 
+            <!-- *********************           Services container       ***********************--> 
+            <div class="services-container">
+                <h1>Services</h1>
+                <h3>Worship Hours:</h3>
+                <p>Sunday 4pm-6pm</p>
+                <h3>Growth Group:</h3>
+                <p>Sunday 8pm-10pm</p>
+                <h3>Youth Group:</h3>
+                <p>Sunday 6pm-8pm</p>
+            </div>
 
+            <!-- *********************           video container       ***********************--> 
+            <div class="vid-container" id="video">
+                <img src="images/assets/vid-bg.png"/>
+                <video>Video</video>
+                <p>Join us for worship service in out pursuit to learn about God and build our faith physically, mentally, and spiritually.</p>
+            </div>
 
-        <div class="services-container">
-            <h1>Services</h1>
-            <h3>Worship Hours:</h3>
-            <p>Sunday 4pm-6pm</p>
-            <h3>Growth Group:</h3>
-            <p>Sunday 8pm-10pm</p>
-            <h3>Youth Group:</h3>
-            <p>Sunday 6pm-8pm</p>
-        </div>
-
-
-
-
-        <div class="vid-container">
-            <video>Video</video>
-            <p>Join us for worship service in out pursuit to learn about God and build our faith physically, mentally, and spiritually.</p>
+            <!-- *********************           Footer container       ***********************--> 
+            <footer class="footer-container" id ="footer">
+                <div class="top-footer">
+                    <div class="sm-container">
+                        <a href="home.html"><img class="footer-icon" src="images/assets/fb-sm.png"/></a>                    <!--facebook link-->
+                        <a href="home.html"><img class="footer-icon" src="images/assets/yt-sm.png"/></a>                    <!--youtube link-->
+                    </div>
+                    <div class="sub-container">
+                        <p>Subscribe to our Jewsletter</p>
+                        <form>
+                            <input type="text" placeholder="Pray4NY@godmail.com"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="contact">
+                        <pre>57-04 Roosevelt Ave, Woodside, NY 11377</pre></br>
+                        <pre>(917) 291-9158          FLC@ChurchNY.com</pre>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <!-- ********************           Footer             **********************-->
-    <footer class="footer-container">
-        <div class="sm-container">
-            <a href="">
-                <img class="footer-icon" src="images/assets/fb-sm.png"/>
-            </a>
-            <a href="">
-                <img class="footer-icon" src="images/assets/yt-sm.png"/>
-            </a>
-        </div>
-        <img class="cross-icon" src="images/assets/cross.png"/>
-        <div class="sub-container">
-            <p>Subscribe to our Jewsletter</p>
-            <form>
-                <input type="text" placeholder="Pray4NY@godmail.com"/>
-            </form>
-        </div>
-        <div class="contact">
-            <pre>57-04 Roosevelt Ave, Woodside, NY 11377</pre></br>
-            <pre>(917) 291-9158          FLC@ChurchNY.com</pre>
-        </div>
-    </footer>
 </body>
 </html>
