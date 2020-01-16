@@ -5,11 +5,45 @@ html, body{
 	margin:0;
 	text-align:left;
 	padding: 0;
-	font-size: 16px;
+	font-size: 20px;
 	color: #222;
-	font-family: helvetica;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 300;
+	background-color:#f2e7d0;
+	z-index: -1000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*background: rgb(242,231,208);
+background: linear-gradient(90deg, rgba(242,231,208,1) 30%, rgba(255,255,255,0) 100%);*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********************************************************/
@@ -18,34 +52,34 @@ html, body{
 /*********************************************************/
 /*********************************************************/
 
+/*ON GOD text*/	
+.landing-container h1{	
+	font-size: 80px;	
+	color: white;	
+	text-align: center;	
+}	
 
-/*ON GOD text*/
-.landing-container h1{
-	font-size: 80px;
-	color: white;
-	text-align: center;
-}
-
-/*Campfire Worship picture*/
-.landing-container .background-image img{
-	position: absolute;
-	z-index: -1;
-	width: 100%;
-}
+/*Campfire Worship picture*/	
+.landing-container .background-image img{	
+	position: absolute;	
+	z-index: -1;	
+	width: 100%;	
+}	
 
 
 /*NAV BAR*/
+
 .nav-container {
 	display: block;
 	position:relative;
 	margin:0;
 	padding: 2% 4%;
 	width: 92%;
-	height: 150px;
+	height: 150px; /*prev 100*/
 }
 
 .nav-container a img{
-    width:300px;
+    width:300px; /*prev 340*/
 }
 
 .nav-container .nav-bar {
@@ -67,9 +101,40 @@ html, body{
 	padding: 10px;
 	margin: 0;
 	font-size: 18px;
-    font-weight: bold;
-    color: white;
+	font-weight: bold;
+	color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -81,18 +146,49 @@ html, body{
 
 .body-container{
 	width:60%;
-	height:500px;
+	height:1500px;
 	margin: 0% 20%;
 }
 
-/*services*/
-.body-container .story-container .top-container h1{
-	color: white;
+/*story*/
+.story-container .top-container h1{
+	color: #ffffff;
+}
+.story-container .top-container p{
+	color: #ffffff;
 }
 
-.body-container .story-container .top-container p{
-	color: white;
+
+
+
+/*service*/
+.services-container{
+	text-align: center;
 }
+
+.services-container h1{
+}
+
+.services-container h3{
+	margin:0;
+}
+.services-container p{
+	margin-top:0;
+}
+/*vid*/
+.vid-container{
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -121,71 +217,50 @@ html, body{
 /*footer*/
 /*********************************************************/
 /*********************************************************/
-div div h3 {
-	margin: 0 0 4px 0;
-	text-transform: uppercase;
-}
 
-ul{
-	margin: 0;
-	padding: 0;
-}
-
-li{
-	list-style-type: none;
-	text-transform: capitalize;
-}
 
 .footer-container{
 	position:relative;
-	margin:0;
+	margin:0 20%;
 	padding:0;
-	width:100%;
+	width:60%;
 	height: 180px;
 }
-.footer-container .footer-top{
-	display: block;
-	position: relative;
-	width: 80%;
-	margin: 0 10%;
-	padding-top: 20px;
+
+
+.footer-icon{
+	width:40px;
 }
 
-.footer-container .footer-top .footer-nav{
-	display:block;
-	position: relative;
+.cross-icon{
+	width:60px;
+}
+
+.sm-container{
+	width:40%;
 	float:left;
-	width: auto;
-	margin:0 1% 15px 0;
-	padding: 0;
 }
 
-.footer-container .footer-top .footer-nav ul li {
-	float: left;
-	margin-right:15px;
+.sub-container{
+ width:40%;
+ float:right;
 }
 
-.footer-container .footer-top .footer-nav ul li ul li{
-	float: none;
+.sub-container p{
+	margin:0;
 }
 
-.footer-container .footer-top .contact{
-	display: block;
-	position: relative;
-	margin: 0;
-	padding: 0;
-	float: right;
+.contact pre{
+	margin:0;
+	display:inline-block;
+	text-align:center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
 }
-
-
-.footer-container .footer-top .contact li ul li{
-	float:none;
-}
-
-.footer-container .footer-top .contact li ul li p{
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
+.contact p{
+	margin:0;
+	display:inline-block;
+	text-align:center;
 }
 
 a{
