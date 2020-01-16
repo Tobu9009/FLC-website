@@ -70,6 +70,7 @@ background: linear-gradient(90deg, rgba(242,231,208,1) 30%, rgba(255,255,255,0) 
 
 /*defines size for logo*/
 .nav-container a img{
+	position: inherit;
     width:calc(100px + 12%); /*calc method calculates static size (px) + responsive size (%) to determine min and max image size*/
 }
 
@@ -206,6 +207,7 @@ img{
 	height: 240px;
 	background-image: url("images/assets/footer-bg.png");
 	background-size: 100%;
+	background-repeat: no-repeat;
 	z-index:-1;
 }
 
