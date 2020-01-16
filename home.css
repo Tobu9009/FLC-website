@@ -115,7 +115,6 @@ html, body{
 /*********************************************************/
 /*defines size of "story-container"*/
 .story-container{
-	margin-top: 10%;
 	height:800px;
 	z-index:1;
 }
