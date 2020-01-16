@@ -13,6 +13,7 @@ html, body{
 	background-image: url("images/assets/asset3.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	z-index: -1000;
 }
 
