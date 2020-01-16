@@ -53,17 +53,20 @@ background: linear-gradient(90deg, rgba(242,231,208,1) 30%, rgba(255,255,255,0) 
 /*********************************************************/
 
 /*ON GOD text*/	
-.landing-container h1{	
-	font-size: 80px;	
-	color: white;	
-	text-align: center;	
+.landing-container h1{
+	color: white;
+	text-align: center;
+	display:block;
+	font-size:144px;
+	margin:0;
 }	
 
 /*Campfire Worship picture*/	
-.landing-container .background-image img{	
-	position: absolute;	
-	z-index: -1;	
-	width: 100%;	
+.landing-container .background-image img{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	top:-190px;
 }	
 
 
@@ -72,10 +75,8 @@ background: linear-gradient(90deg, rgba(242,231,208,1) 30%, rgba(255,255,255,0) 
 .nav-container {
 	display: block;
 	position:relative;
-	margin:0;
-	padding: 2% 4%;
+	margin: 2% 4%;
 	width: 92%;
-	height: 150px; /*prev 100*/
 }
 
 .nav-container a img{
@@ -103,6 +104,10 @@ background: linear-gradient(90deg, rgba(242,231,208,1) 30%, rgba(255,255,255,0) 
 	font-size: 18px;
 	font-weight: bold;
 	color: #ffffff;
+}
+
+.banner{
+	padding:180px 0 412px 0;
 }
 
 
