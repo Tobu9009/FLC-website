@@ -9,6 +9,24 @@
     <script src = "home.js"></script>
     <script>
     $(document).ready(function(){
+        $('body').hide();
+        $('body').fadeIn(1400);
+        
+        $('.landing-container , .contents').hide();
+        $('.landing-container , .contents').delay(600).fadeIn(2000);
+
+        $("a[href^='#']").click(function(e) {
+            e.preventDefault();
+            
+            var position = $($(this).attr("href")).offset().top;
+
+            $("body, html").animate({
+                scrollTop: position
+            },1000 );
+        });
+        $(window).on('beforeunload', function() {
+   $(window).scrollTop(0);
+});
     });
 </script>
 </head>
@@ -36,12 +54,12 @@
         <div class="contents">
             <!-- *********************           Story container       ***********************--> 
             <div class="story-container" id="story">                    <!--subject to change-->
-            <img src="images/assets/story-bg.png" alt="Isaiah was here"/>
+                <img class="bg-img" src="images/assets/story-bg.png" alt="Isaiah was here"/>
                 <div class="top-container">
                     <h1>Our Story</h1>
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="bottom">
+                <div class="bottom-container">
                     <p>Lorem Ipsum</p>
                 </div>
             </div>
@@ -49,27 +67,29 @@
             <!-- *********************           Services container       ***********************--> 
             <div class="services-container">
                 <h1>Services</h1>
-                <h3>Worship Hours:</h3>
+                <h3>Worship Hours</h3>
                 <p>Sunday 4pm-6pm</p>
-                <h3>Growth Group:</h3>
+                <h3>Growth Group</h3>
                 <p>Sunday 8pm-10pm</p>
-                <h3>Youth Group:</h3>
+                <h3>Youth Group</h3>
                 <p>Sunday 6pm-8pm</p>
             </div>
 
             <!-- *********************           video container       ***********************--> 
             <div class="vid-container" id="video">
-                <img src="images/assets/vid-bg.png" alt="Jeremiah was also here"/>
-                <video>Video</video>
-                <p>Join us for worship service in out pursuit to learn about God and build our faith physically, mentally, and spiritually.</p>
+                <img class="bg-img" src="images/assets/vid-bg.png" alt="Jeremiah was also here"/>
+                <div class="vid-content">
+                    <img src="images/assets/vid-placeholder.png" alt="I died for your Sins"/>
+                    <p>Join us for worship service in out pursuit to learn about God and build our faith physically, mentally, and spiritually.</p>
+                </div>
             </div>
 
             <!-- *********************           Footer container       ***********************--> 
             <footer class="footer-container" id ="footer">
                 <div class="top-footer">
                     <div class="sm-container">
-                        <a href="home.html"><img class="footer-icon" src="images/assets/fb-sm.png" alt="facebook"/></a>                    <!--facebook link-->
-                        <a href="home.html"><img class="footer-icon" src="images/assets/yt-sm.png" alt="youtube"/></a>                    <!--youtube link-->
+                        <a href="https://www.facebook.com/FurryMate/"><img class="footer-icon" src="images/assets/fb-sm.png" alt="facebook"/></a>                    <!--facebook link-->
+                        <a href="https://www.youtube.com/watch?v=Sc_GJMOtblM"><img class="footer-icon" src="images/assets/yt-sm.png" alt="youtube"/></a>                    <!--youtube link-->
                     </div>
                     <div class="sub-container">
                         <p>Subscribe to our Jewsletter</p>
