@@ -2,81 +2,138 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link type="text/css" rel="stylesheet" href="home.css"/>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src = "home.js"></script>
     <script>
     $(document).ready(function(){
+        $('body').hide();
+        $('body').fadeIn(1400);
+        
+        $('.landing-container , .contents').hide();
+        $('.landing-container , .contents').delay(600).fadeIn(2000);
+
+        $("a[href^='#']").click(function(e) {
+            e.preventDefault();
+            
+            var position = $($(this).attr("href")).offset().top;
+
+            $("body, html").animate({
+                scrollTop: position
+            },1000 );
+        });
+        $(window).on('beforeunload', function() {
+   $(window).scrollTop(0);
+});
     });
+
+</script>
+</head>
+<body>
+    <!-- ********************           Body             **********************-->
+    <div class= "body-container">
+	
+        <!-- *********************           Landing container       ***********************--> 
+        <div class="landing-container">
+
+	<!-- *********************** vvvv slider images vvvv *************************-->
+		<div class="slideshow-container">
+		<img class="churchSlides fade" src="images/assets/asset3.png" alt="some pic">
+		<img class="churchSlides fade" src="images/blackRockRetreatWomens.JPG" alt="some pic">
+		<div class="banner">On God.</div>
+		</div>
+	<!-- ************************ ^^^ slider images ^^^ ********************-->
+            <div class="nav-container">
+
+                <a href="home.html"><img src="images/flc-logo-text.png" alt="Pic of the Holy Homies"></a>
+                <div class="nav-bar">
+			
+                    <div class="nav-contents">
+                        <a href="home.html">HOME</a>
+                        <a href="#story">ABOUT US</a>
+                        <a href="#video">NEWS</a>
+                        <a href="#footer">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contents">
+            <!-- *********************           Story container       ***********************--> 
+            <div class="story-container" id="story">                    <!--subject to change-->
+                <img class="bg-img" src="images/assets/story-bg.png" alt="Isaiah was here"/>
+                <div class="top-container">
+                    <h1>Our Story</h1>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="bottom-container">
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <!-- *********************           Services container       ***********************--> 
+            <div class="services-container">
+                <h1>Services</h1>
+                <h3>Worship Hours</h3>
+                <p>Sunday 4pm-6pm</p>
+                <h3>Growth Group</h3>
+                <p>Sunday 8pm-10pm</p>
+                <h3>Youth Group</h3>
+                <p>Sunday 6pm-8pm</p>
+            </div>
+
+            <!-- *********************           video container       ***********************--> 
+            <div class="vid-container" id="video">
+                <img class="bg-img" src="images/assets/vid-bg.png" alt="Jeremiah was also here"/>
+                <div class="vid-content">
+                    <img src="images/assets/vid-placeholder.png" alt="I died for your Sins"/>
+                    <p>Join us for worship service in out pursuit to learn about God and build our faith physically, mentally, and spiritually.</p>
+                </div>
+            </div>
+
+            <!-- *********************           Footer container       ***********************--> 
+            <footer class="footer-container" id ="footer">
+                <div class="top-footer">
+                    <div class="sm-container">
+                        <a href="https://www.facebook.com/FurryMate/"><img class="footer-icon" src="images/assets/fb-sm.png" alt="facebook"/></a>                    <!--facebook link-->
+                        <a href="https://www.youtube.com/watch?v=Sc_GJMOtblM"><img class="footer-icon" src="images/assets/yt-sm.png" alt="youtube"/></a>                    <!--youtube link-->
+                    </div>
+                    <div class="sub-container">
+                        <p>Subscribe to our Jewsletter</p>
+                        <form>
+                            <input type="text" placeholder="Pray4NY@godmail.com"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="contact">
+                        <pre>57-04 Roosevelt Ave, Woodside, NY 11377</pre></br>
+                        <pre>(917) 291-9158          FLC@ChurchNY.com</pre>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+  <!--************************    automatic slide changer        *********************-->
+    <script>
+    var index = 0;
+    autoSlides();
+    function autoSlides() {
+    var i;
+    var slides = document.getElementsByClassName("churchSlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    index++;
+    if(index > slides.length){index = 1}
+    slides[index-1].style.display = "block";  
+    setTimeout(autoSlides, 2000);
+    }
+
 </script>
 
-</head>
-
-<body>
-
-    <a href="home.html"><img src="bobobo profile picture.jpeg" style="height:300px;width:100%;" alt="FLC-Logo.png"></a> 
-
-    <div class="nav-container">
-            <a class="current" href="home.html">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="#news">NEWS</a>
-            <a href="#contact">CONTACT</a>
-    </div>
-    <!-- ********************           Body             **********************-->
-    <div class="body-container">
-        
-
-
-
-    </div>
-    <!-- ********************           Footer             **********************-->
-    <footer>
-	<div class="customer-service">
-            <ul>
-            <li>
-                <h3>Customer Service</h3>                    <!--Customer support tab-->
-                <ul>
-                <li><a href="#html">s</a></li>    <!--returns/refunds-->
-                <li><a href="#html">s</a></li>                      <!--frequently asked questions-->
-                <li><a href="#html">s</a></li>       <!--privacy policy-->
-                <li><a href="#html">s</a></li>             <!--terms of use-->
-                <li><a href="#html">s</a></li>        <!--disclaimer-->
-                </ul>
-            </li>
-            <li>
-                <h3>Resources</h3>                           <!--Resources tab-->
-                <ul>
-                <li><a href="#html">d</a></li>   <!--customer reviews-->
-                <li><a href="#html">d</a></li>      <!--news on current deals and whatnot-->
-                <li><a href="#html">d</a></li>            <!--apply for job-->
-                </ul>
-            </li>
-            </ul>
-        </div>
-        <div class="contact-info">
-	    <ul>
-            <li><h3>contact info</h3>                                                <!--contact tab-->
-                <ul>
-                <li><a href="#html">57-04 Roosevelt Ave,</br> Woodside, NY 11377</a></li>     <!--open maps-->
-                <li><a href="#html">(917) 291-9158</a></li>                           <!--open facetime/copy-->
-                <li><p 4pm-9pm</p></li>                              <!--hours of operation-->
-                <li><a href="#html">Email Us</a></li>
-                </ul>
-            </ul>                                 <!--copy email or send to contact form-->
-            </li>
-        </div>
-        <div class="img">
-            <div class="logo-container">  <!--middle container-->
-            <img src="">                <!--plain logo-->
-            </div>
-            <div class="link-container"></a>    <!--right container-->
-            <a href="#com/">ee</a>
-            <a href="#com/">ee</a>
-            <a href="#com/">ee</a>
-            </div>
-        </div>
-        </div>
-    </footer>
 </body>
 </html>
